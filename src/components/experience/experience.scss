@@ -1,0 +1,336 @@
+.experienceContainer,
+.experienceContainerDark {
+  padding: 5rem 0;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.experienceContainerDark {
+  background: #0b0b0c;
+}
+
+.experienceWrapper,
+.experienceWrapperDark {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.experienceItem,
+.experienceItemDark {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #667eea;
+  position: relative;
+}
+
+.experienceItemDark {
+  background: #1a1a1a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-left-color: #764ba2;
+}
+
+.experienceItem:hover,
+.experienceItemDark:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.experienceItemDark:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.companyInfo {
+  flex: 1;
+}
+
+.companyName,
+.companyNameDark {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.companyNameDark {
+  color: #fff;
+}
+
+.position,
+.positionDark {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 0;
+}
+
+.positionDark {
+  color: #764ba2;
+}
+
+.experienceMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.duration,
+.durationDark {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  background: #ecf0f1;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.durationDark {
+  color: #bdc3c7;
+  background: #2c2c2c;
+}
+
+.location,
+.locationDark {
+  font-size: 0.9rem;
+  color: #95a5a6;
+  font-weight: 500;
+}
+
+.locationDark {
+  color: #7f8c8d;
+}
+
+.description,
+.descriptionDark {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 2rem;
+}
+
+.descriptionDark {
+  color: #bdc3c7;
+}
+
+.achievements {
+  margin-bottom: 2rem;
+}
+
+.achievementsTitle,
+.achievementsTitleDark {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.achievementsTitleDark {
+  color: #fff;
+}
+
+.achievementsList,
+.achievementsListDark {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievementsList li,
+.achievementsListDark li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #34495e;
+}
+
+.achievementsListDark li {
+  color: #bdc3c7;
+}
+
+.achievementsList li::before,
+.achievementsListDark li::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-size: 0.8rem;
+}
+
+.achievementsListDark li::before {
+  color: #764ba2;
+}
+
+.technologies {
+  margin-top: 1.5rem;
+}
+
+.techTitle,
+.techTitleDark {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.techTitleDark {
+  color: #fff;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag,
+.techTagDark {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.techTagDark {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.techTag:hover,
+.techTagDark:hover {
+  transform: translateY(-2px);
+}
+
+// Mobile Responsive Design
+@media (max-width: 768px) {
+  .experienceContainer,
+  .experienceContainerDark {
+    padding: 3rem 0;
+  }
+  
+  .experienceWrapper,
+  .experienceWrapperDark {
+    padding: 0 1rem;
+  }
+  
+  .experienceItem,
+  .experienceItemDark {
+    padding: 2rem;
+  }
+  
+  .experienceHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .experienceMeta {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .companyName,
+  .companyNameDark {
+    font-size: 1.5rem;
+  }
+  
+  .position,
+  .positionDark {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experienceContainer,
+  .experienceContainerDark {
+    padding: 2rem 0;
+  }
+  
+  .experienceItem,
+  .experienceItemDark {
+    padding: 1.5rem;
+  }
+  
+  .companyName,
+  .companyNameDark {
+    font-size: 1.3rem;
+  }
+  
+  .position,
+  .positionDark {
+    font-size: 1rem;
+  }
+  
+  .description,
+  .descriptionDark {
+    font-size: 0.9rem;
+  }
+  
+  .achievementsList li,
+  .achievementsListDark li {
+    font-size: 0.9rem;
+  }
+  
+  .techTag,
+  .techTagDark {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .experienceItem,
+  .experienceItemDark {
+    padding: 1rem;
+  }
+  
+  .companyName,
+  .companyNameDark {
+    font-size: 1.2rem;
+  }
+  
+  .position,
+  .positionDark {
+    font-size: 0.95rem;
+  }
+  
+  .description,
+  .descriptionDark {
+    font-size: 0.85rem;
+  }
+  
+  .achievementsList li,
+  .achievementsListDark li {
+    font-size: 0.85rem;
+  }
+  
+  .techTag,
+  .techTagDark {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+  }
+}
