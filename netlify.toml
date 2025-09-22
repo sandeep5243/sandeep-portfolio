@@ -7,6 +7,12 @@
   to = "/index.html"
   status = 200
 
+# Force cache refresh for old links
+[[redirects]]
+  from = "/?v=*"
+  to = "/index.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
